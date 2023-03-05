@@ -38,3 +38,21 @@ table {
     display: none;
   }
 
+
+  .div-tabla {
+    width: 75%;
+  }
+
+
+  @media screen and (max-width: 770px) {
+    .div-tabla {
+      width: 90%;
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+    .div-tabla {
+      width: 100%;
+    }
+  }
+
