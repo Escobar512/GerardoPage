@@ -32,7 +32,11 @@ $(document).ready(function () {
 
     $("#testButton2").click(function () {
 
-        html5QrCode.stop({ facingMode: "environment" }, config2, qrCodeSuccessCallback);
+        html5QrCode.stop().then((ignore) => {
+            // QR Code scanning is stopped.
+          }).catch((err) => {
+            // Stop failed, handle it.
+          });
     });
 
 
