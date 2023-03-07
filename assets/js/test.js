@@ -17,7 +17,7 @@ $(document).ready(function () {
 
     const html5QrCode = new Html5Qrcode("qr-reader");
         const qrCodeSuccessCallback = (decodedText, decodedResult) => {
-            window.location.href = decodedResult;
+            window.location.href = decodedText;
         };
 
 
